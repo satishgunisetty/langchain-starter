@@ -15,16 +15,9 @@ if __name__ == "__main__":
 
     load_dotenv()
 
-    prompt_template = PromptTemplate.from_template(
-        template=SUMMARY_PROMPT
-    )
+    prompt_template = PromptTemplate.from_template(template=SUMMARY_PROMPT)
 
-
-    llm = ChatOllama(
-        model="llama3.2:1b",
-        temperature=0
-    )
-
+    llm = ChatOllama(model="llama3.2:1b", temperature=0)
 
     chain = prompt_template | llm | StrOutputParser()
 
