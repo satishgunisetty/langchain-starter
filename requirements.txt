@@ -5,3 +5,5 @@ langchain-community
 langchainhub
 python-dotenv
 black
+tweepy
+streamlit

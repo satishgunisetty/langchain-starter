@@ -8,7 +8,7 @@ LINKEDIN_PROMPT = """
     Given the LinkedIn information {information} about a person, With that information i want you to create:
     1. A short summary
     2. Two interesting facts about them.
-    Specify his name wherever possible.
+    \n{format_instructions}
 """
 
 LINKEDIN_LOOKUP_PROMPT = """
